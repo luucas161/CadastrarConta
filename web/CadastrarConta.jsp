@@ -12,7 +12,7 @@
         <title>Cadastro de Conta</title>
     </head>
     <body>
-        <h1>Cadastro de Conta</h1>
+        <h1>Cadastro de Conta xD</h1>
         <form action="" method="post">
             <p>Numero da conta: <input type="text" name="nconta" required="required"></p>
             <p>CPF: <input type="text" name="cpf" required="required"></p>
