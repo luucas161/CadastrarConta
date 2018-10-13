@@ -53,7 +53,6 @@ public class CadastrarConta extends HttpServlet {
             throws ServletException, IOException {
           String conta = request.getParameter("nconta");
           String cpf = request.getParameter("cpf");
-          
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection c;

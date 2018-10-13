@@ -17,6 +17,7 @@
         <form action="CadastrarOperacao" method="post">
             <p>Numero da conta: <input type="text" name="nconta" required="required"></p>
             <p>Valor: <input type="text" name="valor" required="required"></p>
+            <p> Data: <input type ="date" name="data" required="required"></p>
             <p><input type="submit" name="enviar" value="Enviar"></p>
         </form>
             
