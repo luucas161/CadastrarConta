@@ -1,16 +1,50 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+
+<html> 
+    
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Conta Bancária</title>
+                     <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        
+        
+       
+
+        <div>
+             <h1>Abra sua conta </h1>
+            <form action="geral" method="POST">
+                <p> Conta:</p>
+                <input type="hidden" name="op" value="1" required="" />
+                <input type="text" name="conta" value="" required=""/>
+              
+                CPF:
+            
+                <input type="text" name="cpf" value="" />
+                <input type="submit" value="Cadastrar" style= "color:white; background-color:black;" />
+            </form>
+            <hr>
+             <h1>Fazer transação</h1>
+            <form action="geral" method="POST">
+                <p>Conta:</p> 
+                <input type="hidden" name="op" value="2" />
+                <input type="text" name="conta" value="" />
+                <p>CPF:</p>
+                <input type="text" name="cpf" value="" />
+                <p> Valor:</p>
+                <input type="text" name="valor" value="" />
+                <input type="submit" value="Enviar" style= "color:white; background-color:black;"/>
+            </form>
+           <hr>
+            <h1>Visualizar histórico</h1>
+            <form action="geral" method="POST">
+                <p>Conta:</p>
+                <input type="hidden" name="op" value="3" />
+                <input type="text" name="conta" value="" />
+                <input type="submit" value="Consultar" style= "color:white; background-color:black;">
+            </form>
+            
+        </div>
     </body>
 </html>
