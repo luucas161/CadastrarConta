@@ -72,7 +72,7 @@ public class CadastroOperacao extends HttpServlet {
             Class.forName("com.mysql.jdbc.Driver");
             Connection c;
             c = DriverManager.getConnection("jdbc:mysql://localhost/contacorrente","root","");
-            PreparedStatement  p =  c.prepareStatement("insert into contas (NumeroConta,CPF_titular) values (?,?)");
+            PreparedStatement  p =  c.prepareStatement("insert into operacao (NumeroConta,valor) values (?,?)");
             p.setString(1, conta );
             p.setString(2, valor);
             p.execute() ;
